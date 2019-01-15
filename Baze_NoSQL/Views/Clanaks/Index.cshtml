@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Clanak>
+
+@{
+    ViewData["Title"] = "Portal";
+}
+
+<h1>Portal</h1>
+<hr />
+
+@foreach (var item in Model)
+{
+
+    
+    <div class="media">
+        <div class="media-left">
+            <img src="@item.SlikaStr" class="media-object" style="width:200px" />
+        </div>
+        <div class="media-body">
+            <h3 class="media-heading">@Html.DisplayFor(modelItem => item.Naslov)</h3>
+            <p>@Html.DisplayFor(modelItem => item.Tekst)</p>
+
+            <h4 class="media-bottom">@Html.DisplayFor(modelItem => item.Autor)</h4>
+            <h6>@Html.DisplayFor(modelItem => item.Datum)</h6>
+            <hr />
+            <h4>Komentari</h4>
+            <div class="row">
+                <div class="col-lg-11 col-lg-push-1">
+                    <ul class="list-group">
+                        @if (item.Komentari != null)
+                        {
+                            foreach (var c in item.Komentari)
+                            {
+                        <li class="list-group-item"> <b>@c.Tekst</b> (@c.Vrijeme)</li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+            @using (Html.BeginForm("Index", "Clanaks", FormMethod.Post))
+            {
+
+                <input type="hidden" value="@item.Id" name="id" />
+                <div class="form-group">
+                    <input type="text" class="form-control" name="text" placeholder="Dodaj komentar" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Komentiraj" class="btn btn-outline-info" />
+                </div>
+            }
+        </div>
+    </div>
+}
+
+
+

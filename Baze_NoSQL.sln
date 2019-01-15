@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baze_NoSQL", "Baze_NoSQL\Baze_NoSQL.csproj", "{0C14E78B-FCA2-42E1-AF2D-1D4E4B268E3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C14E78B-FCA2-42E1-AF2D-1D4E4B268E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C14E78B-FCA2-42E1-AF2D-1D4E4B268E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C14E78B-FCA2-42E1-AF2D-1D4E4B268E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C14E78B-FCA2-42E1-AF2D-1D4E4B268E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3611EFF1-F011-4A7D-B3FF-8FE695B793A6}
+	EndGlobalSection
+EndGlobal
